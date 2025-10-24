@@ -1,0 +1,511 @@
+body {
+  background-color: #0e0e12;
+  color: #e0e0e0;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.custom-navbar {
+  background: rgba(20, 20, 30, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.logo-highlight {
+  color: #8b5cf6;
+}
+
+/* profile Section */
+#profile {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #14141f;
+  background: linear-gradient(180deg, #0e0e12 0%, #14141f 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#profile h1 span {
+  color: #8b5cf6;
+}
+
+#profile h1 {
+  font-weight: 600;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.photo-wrapper img {
+  width: 260px;
+  border: 5px solid #8b5cf6;
+  border-radius: 50%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.photo-wrapper img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+}
+
+
+/* Section umum */
+section {
+  padding: 100px 0;
+}
+
+
+/* Projects */
+#projects {
+  background-color: #0e0e12;
+  background: linear-gradient(180deg, #0e0e12 0%, #14141f 100%);
+  position: relative;
+  overflow: hidden;
+  gap: 30px;
+  
+}
+#projects::before,
+#projects::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.3;
+}
+#projects::before {
+    width: 250px;
+    height: 250px;
+    background: #8b5cf6;
+    top: -60px;
+    left: -60px;
+}
+
+#projects::after {
+    width: 200px;
+    height: 200px;
+    background: #3b82f6;
+    bottom: -60px;
+    right: -60px;
+}
+
+#projects h2 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+}
+#projects h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 10px auto 0;
+    background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+    border-radius: 5px;
+}
+
+.projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px; /* ubah jarak antar card jadi lebih rapat */
+    justify-content: center; /* agar tetap sejajar di tengah */
+  }
+  
+.project-card {
+    background-color: rgba(26, 26, 48, 0.8);
+    border-radius: 20px;
+    padding: 25px;
+    color: #f1f1f1;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 0.8s ease-in-out both;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.project-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1px;
+    background: linear-gradient(145deg, #8b5cf6, #3b82f6);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.3;
+  }
+
+.project-card:hover {
+  transform: perspective(1000px) rotateX(3deg) translateY(-8px);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+.project-card h5 {
+  color: #8b5cf6;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.project-card p {
+  color: #d1d1d1;
+  opacity: 0.9;
+  margin: 0;
+  padding-top: 10px;
+}
+
+
+.projectLogo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* gambar tetap mentok ke atas */
+    width: 100%;
+  }
+
+.projectLogo img {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #8b5cf6;
+    align-self: center;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.project-card img:hover {
+    transform: scale(1.05);
+  }
+ 
+  .projectText {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* teks di tengah */
+    margin-top: 15px;
+  }
+  .projectLink {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+  }
+  .projectLink:hover .edu-card {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+  }
+  
+
+#education {
+  background-color: #14141f;
+  background: linear-gradient(180deg, #0e0e12 0%, #14141f 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#education::before,
+#education::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.3;
+}
+
+#education::before {
+    width: 250px;
+    height: 250px;
+    background: #8b5cf6;
+    top: -60px;
+    left: -60px;
+}
+
+#education::after {
+    width: 200px;
+    height: 200px;
+    background: #3b82f6;
+    bottom: -60px;
+    right: -60px;
+  }
+    
+  #education h2 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+  }
+  
+  #education h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 10px auto 0;
+    background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+    border-radius: 5px;
+  }
+
+  .educationCard {
+    background: rgba(20, 20, 30, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    color: #f1f1f1;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+    animation: fadeUp 0.8s ease-in-out both;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    margin-bottom: 15px;
+  }
+  .educationLink {
+    text-decoration: none;
+    color: inherit;
+  }
+  .eduLink:hover .educationCard {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
+    cursor: pointer;
+  }
+  .eduLogo img {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #8b5cf6;
+    align-self: center;
+    margin-bottom: 15px;
+    border-radius: 12px;
+  }
+  .eduTitle {
+    background: linear-gradient(90deg, #8b5cf6, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.educationCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(139, 92, 246, 0.4);
+  }
+
+    .educationCard::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 20px;
+        padding: 1px;
+        background: linear-gradient(145deg, #8b5cf6, #3b82f6);
+        -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0.3;
+    }
+
+    .educationCard h5 {
+      color: #8b5cf6;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .educationCard p {
+      margin-bottom: 8px;
+      opacity: 0.9;
+    }
+
+
+
+#skills {
+  background-color: #1b1b28;
+  background: linear-gradient(180deg, #0e0e12 0%, #14141f 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#skills::before,
+#skills::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.3;
+}
+
+#skills::before {
+    width: 250px;
+    height: 250px;
+    background: #8b5cf6;
+    top: -60px;
+    left: -60px;
+}
+#skills::after {
+    width: 200px;
+    height: 200px;
+    background: #3b82f6;
+    bottom: -60px;
+    right: -60px;
+  }
+    
+  /* Judul */
+  #skills h2 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+  }
+  
+  #skills h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 10px auto 0;
+    background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+    border-radius: 5px;
+  }
+
+.skillCard{
+background: rgba(20, 20, 30, 0.8);
+  border-radius: 20px;
+  padding: 30px;
+  color: #f1f1f1;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.skillCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.4);
+  }
+  
+  /* Tambahan efek garis halus */
+  .skillCard::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1px;
+    background: linear-gradient(145deg, #8b5cf6, #3b82f6);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.3;
+  }
+  
+  .skillCard h5 {
+    color: #8b5cf6;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .skillCard ul li {
+    margin-bottom: 8px;
+    opacity: 0.9;
+  }
+  
+  /* Animasi lembut masuk */
+  .skillCard {
+    animation: fadeUp 0.8s ease-in-out both;
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* Contact */
+#contact {
+  background-color: #0e0e12;
+  position: relative;
+  text-align: center;
+  background-color: #0e0e12;
+  color: #e0e0e0;
+  padding: 6rem 1rem;
+  overflow: hidden;
+}
+
+.contactTitle {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+  }
+  
+  .contactDesc {
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .contact-btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  .contact-btn.email {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  }
+  .contact-btn.linkedin,
+.contact-btn.github {
+  background-color: #1f1f23;
+}
+
+.contact-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+.contact-footer {
+  margin-top: 4rem;
+  color: #7a7a7a;
+  font-size: 0.95rem;
+}
+
+.contact-footer .quote {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.contact-footer .credit {
+  margin-top: 0.5rem;
+  opacity: 0.7;
+}
+
+.btn-primary {
+  background-color: #8b5cf6;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #7c3aed;
+}
