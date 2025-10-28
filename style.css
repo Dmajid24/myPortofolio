@@ -495,6 +495,12 @@ background: rgba(20, 20, 30, 0.8);
   .contact-btn.whatsapp {
     background: linear-gradient(90deg, #25d366, #128c7e);
   }
+
+  .contact-btn.line {
+    background: linear-gradient(90deg, #06c755, #00a44e);
+    color: white;
+  }
+  
   
   /* Hover effect universal */
   .contact-btn:hover {
