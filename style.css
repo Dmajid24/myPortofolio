@@ -472,40 +472,59 @@ background: rgba(20, 20, 30, 0.8);
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
+  
+  /* Gradasi tiap tombol */
   .contact-btn.email {
-    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    background: linear-gradient(90deg, #d93025, #f57c00); /* gradasi khas Gmail */
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(217, 48, 37, 0.4);
   }
-  .contact-btn.linkedin,
-.contact-btn.github {
-  background-color: #1f1f23;
-}
 
-.contact-btn:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
-}
-
-.contact-footer {
-  margin-top: 4rem;
-  color: #7a7a7a;
-  font-size: 0.95rem;
-}
-
-.contact-footer .quote {
-  font-style: italic;
-  opacity: 0.85;
-}
-
-.contact-footer .credit {
-  margin-top: 0.5rem;
-  opacity: 0.7;
-}
-
-.btn-primary {
-  background-color: #8b5cf6;
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #7c3aed;
-}
+  .contact-btn.linkedin {
+    background: linear-gradient(90deg, #0077b5, #00a0dc);
+  }
+  
+  .contact-btn.github {
+    background: linear-gradient(90deg, #3b3b3f, #6b7280);
+  }
+  
+  .contact-btn.instagram {
+    background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af);
+  }
+  
+  .contact-btn.whatsapp {
+    background: linear-gradient(90deg, #25d366, #128c7e);
+  }
+  
+  /* Hover effect universal */
+  .contact-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(139, 92, 246, 0.5);
+    filter: brightness(1.1);
+  }
+  
+  .contact-footer {
+    margin-top: 4rem;
+    color: #7a7a7a;
+    font-size: 0.95rem;
+  }
+  
+  .contact-footer .quote {
+    font-style: italic;
+    opacity: 0.85;
+  }
+  
+  .contact-footer .credit {
+    margin-top: 0.5rem;
+    opacity: 0.7;
+  }
+  
+  .btn-primary {
+    background-color: #8b5cf6;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #7c3aed;
+  }
+  
