@@ -3,206 +3,194 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dafiq Mahfuz Majid | Portfolio</title>
+    <title>Dafiq Mahfuz Majid | Digital Portfolio</title>
 
-    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
-        <div class="container">
-            <a class="navbar-brand fw-semibold" href="#">
-                <span class="logo-highlight">Dafiq&nbsp;</span>Portfolio
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="glow-bg"></div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="#profile">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <pre><span class="text-primary-glow">Dafiq </span>Mahfuz Majid.</pre>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-grid-fill"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
+                    <li class="nav-item"><a class="nav-link px-3" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#projects">Work</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link ps-3" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Profile Section -->
-    <section id="profile">
+    <section id="hero" class="d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="text-secondary mb-2">Hello There 👋</p>
-                    <h1 class="fw-bold display-5">I am <span>Dafiq Mahfuz Majid</span></h1>
-                    <h5 class="mb-4">Computer Science Student & Database Enthusiast</h5>
-                    <p class="mb-4">
-                        I’m a Computer Science student passionate about database optimization, web development,
-                        and creating efficient digital systems.
+                <div class="col-lg-7 text-center text-lg-start">
+                    <div class="badge-custom mb-3">Available for Projects</div>
+                    <h1 class="display-3 fw-800 mb-3">Building digital <span class="text-gradient">excellence</span> through code.</h1>
+                    <p class="lead text-secondary mb-5 pe-lg-5">
+                        Computer Science student at Bina Nusantara University. Specialized in <b>Laravel ecosystem</b> and crafting efficient database systems.
                     </p>
-                    <a href="asset/CV Dafiq.pdf" download="Dafiq-Mahfuz-Majid-CV.pdf" class="btn btn-primary me-2">Download CV</a>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="asset/CV Dafiq.pdf" class="btn btn-primary-custom">Download Resume</a>
+                        <a href="#projects" class="btn btn-outline-custom">View My Work</a>
+                    </div>
                 </div>
-                <div class="col-md-6 text-center mt-5 mt-md-0">
-                    <div class="photo-wrapper mx-auto">
-                        <img src="Image/Profile.JPG" alt="Dafiq Mahfuz Majid" />
+                <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                    <div class="hero-img-container">
+                        <img src="Image/Profile.JPG" alt="Dafiq Mahfuz Majid" class="img-fluid profile-img" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
-        <div class="container text-center">
-            <h2>My Projects</h2>
-            <div class="projectList mt-5">
-                <!-- WashWhuzz -->
-                <a href="https://github.com/Dmajid24/washWhuzz2" class="projectLink" target="_blank">
-                    <div class="project-card">
-                        <div class="projectLogo">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="fw-bold display-6">Featured Projects</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-glass h-100">
+                        <div class="project-img">
                             <img src="Image/WashWhuzz.jpg" alt="WashWhuzz">
+                            <div class="overlay"><a href="https://github.com/Dmajid24/washWhuzz2" target="_blank"><i class="bi bi-github"></i></a></div>
                         </div>
-                        <div class="projectText">
-                            <h5>WashWhuzz</h5>
-                            <p>Website for ordering car washing services using Laravel 11.</p>
+                        <div class="p-4">
+                            <span class="small text-primary-glow fw-bold">Laravel 11</span>
+                            <h5 class="mt-2 fw-bold">WashWhuzz</h5>
+                            <p class="text-secondary small">End-to-end car washing service platform with robust order management.</p>
                         </div>
                     </div>
-                </a>
+                </div>
 
-                <!-- Portfolio -->
-                <a href="https://dafiqportofolio.vercel.app/" class="projectLink" target="_blank">
-                    <div class="project-card">
-                        <div class="projectLogo">
-                            <img src="Image/Porto.jpg" alt="Portfolio Website">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-glass h-100">
+                        <div class="project-img">
+                            <img src="Image/EcoReport.jpeg" alt="EcoReport">
+                            <div class="overlay"><a href="https://ecoreport-1.onrender.com/" target="_blank"><i class="bi bi-link-45deg"></i></a></div>
                         </div>
-                        <div class="projectText">
-                            <h5>Portfolio Website</h5>
-                            <p>A responsive portfolio built with Bootstrap and modern design.</p>
+                        <div class="p-4">
+                            <span class="small text-primary-glow fw-bold">Web App</span>
+                            <h5 class="mt-2 fw-bold">EcoReport</h5>
+                            <p class="text-secondary small">Community-driven environmental reporting system for campus areas.</p>
                         </div>
                     </div>
-                </a>
+                </div>
 
-                 <!-- EcoReport -->
-                 <a href="https://ecoreport-1.onrender.com/" class="projectLink" target="_blank">
-                    <div class="project-card">
-                        <div class="projectLogo">
-                            <img src="Image/EcoReport.jpeg" alt="Portfolio Website">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-glass h-100">
+                        <div class="project-img">
+                            <img src="Image/Porto.jpg" alt="Portfolio">
+                            <div class="overlay"><a href="#"><i class="bi bi-eye"></i></a></div>
                         </div>
-                        <div class="projectText">
-                            <h5>EcoReport</h5>
-                            <p>A web application that allows students or campus community to report environmental problems.</p>
+                        <div class="p-4">
+                            <span class="small text-primary-glow fw-bold">Frontend</span>
+                            <h5 class="mt-2 fw-bold">Personal Portfolio</h5>
+                            <p class="text-secondary small">A highly aesthetic portfolio focused on user experience and performance.</p>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container text-center">
-            <h2>Education</h2>
-
-            <!-- Binus -->
-            <a href="https://binus.ac.id/" class="educationLink" target="_blank">
-                <div class="educationCard row align-items-center text-start">
-                    <div class="col-md-3 eduLogo"> 
-                        <img src="Image/logo_binus.webp" alt="logoBinus">
-                    </div>
-                    <div class="col-md-9 eduText">
-                        <h5 class="fw-semibold eduTitle">S1 Computer Science - Universitas Internasional Semen Indonesia (2023 - Present)</h5>
-                        <p class="mt-4">Currently pursuing a Bachelor's degree in Computer Science, focusing on database management, web development, and software engineering. Actively involved in various projects and extracurricular activities to enhance practical skills and knowledge in the field.</p>
-                        <p>Current GPA: 3.32 / 4</p>
+    <section id="education" class="bg-darker">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="fw-bold display-6">Education</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="card-glass p-4 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center text-md-start">
+                            <img src="Image/logo_binus.webp" alt="BINUS" class="img-fluid edu-logo">
+                        </div>
+                        <div class="col-md-10 mt-3 mt-md-0">
+                            <span class="text-secondary small">2023 - Present</span>
+                            <h5 class="fw-bold mb-1">Bina Nusantara University</h5>
+                            <p class="text-primary-glow small mb-2">Bachelor of Computer Science • GPA 3.32/4.00</p>
+                            <p class="text-secondary small mb-0">Focusing on Database Management, Software Engineering, and Web Systems.</p>
+                        </div>
                     </div>
                 </div>
-            </a>
 
-            <!-- Telkom -->
-            <a href="https://smktelkom-jkt.sch.id/" class="educationLink" target="_blank">
-                <div class="educationCard row align-items-center text-start">
-                    <div class="col-md-3 eduLogo"> 
-                        <img src="Image/Logo Smk Telkom.png" alt="logoTelkom">
+                <div class="card-glass p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 text-center text-md-start">
+                            <img src="Image/Logo Smk Telkom.png" alt="SMK Telkom" class="img-fluid edu-logo">
+                        </div>
+                        <div class="col-md-10 mt-3 mt-md-0">
+                            <span class="text-secondary small">2020 - 2023</span>
+                            <h5 class="fw-bold mb-1">SMK Telkom Jakarta</h5>
+                            <p class="text-primary-glow small mb-2">Telecommunication Transmission Engineering</p>
+                        </div>
                     </div>
-                    <div class="col-md-9 eduText">
-                        <h5 class="fw-semibold eduTitle">Telecommunication Transmission Engineering - SMK Telkom Jakarta (2020 - 2023)</h5>
-                        <p class="mt-4">Completed High School Education Majoring in Transmission Engineering.</p>
-                    </div>
-                </div>       
-            </a>     
-        </div>  
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <div class="container text-center">
-            <h2>Skills</h2>
-            <div class="row">
-                <div class="col-6">
-                    <div class="skillCard">
-                        <h5>Soft Skills</h5>
-                        <ul class="list-unstyled mt-4">
-                            <li>1. Adaptability</li>
-                            <li>2. Collaboration</li>
-                            <li>3. Communication</li>
-                            <li>4. Leadership</li>
-                            <li>5. Problem solving</li>
-                            <li>6. Teamwork</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="skillCard">
-                        <h5>Hard Skills</h5>
-                        <ul class="list-unstyled mt-4">
-                            <li>1. Canva</li>
-                            <li>2. Figma</li>
-                            <li>3. GoLang</li>
-                            <li>4. Java</li>
-                            <li>5. Microsoft Office</li> 
-                            <li>6. Laravel 11</li>
-                            <li>7. MySQL</li>   
-                        </ul>
-                    </div>
-                </div>
+            <div class="section-header mb-5">
+                <h2 class="fw-bold display-6">Technical Skills</h2>
+                <div class="divider mx-auto"></div>
+            </div>
+            
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="skill-badge">Laravel 11</span>
+                <span class="skill-badge">HTML dan CSS</span>
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">Ms Office</span>
+                <span class="skill-badge">PostgreSQL</span>
+                <span class="skill-badge">REST API</span>
+                <span class="skill-badge">Figma</span>
+                <span class="skill-badge">Bootstrap 5</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">Database Optimization</span>
+                
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="contactTitle">Let’s Talk ⚡</h2>
-        <p class="contactDesc">
-            Have a fun idea, a cool project, or just want to say hi? <br>
-            Feel free to send me a message — I'm always happy to chat with creative people!
-        </p>
-    
-        <div class="contactLinks">
-            <a href="mailto:dafiq@example.com" class="contact-btn email">✉️ Email</a>
-            <a href="https://www.linkedin.com/in/dafiq-mahfuz-majid-351916312/" target="_blank" class="contact-btn linkedin">💼 LinkedIn</a>
-            <a href="https://github.com/Dmajid24" target="_blank" class="contact-btn github">🧠 GitHub</a>
-            <a href="https://www.instagram.com/dafiq.majid/" target="_blank" class="contact-btn instagram">📸 Instagram</a>
-            <a href="https://wa.me/6281234567890" target="_blank" class="contact-btn whatsapp">💬 WhatsApp</a>
-            <a href="https://line.me/ti/p/~yourLineID" target="_blank" class="contact-btn line">📱 LINE</a>
-          </div>
-          
-        
-    
-        <div class="contact-footer"></div>
-            <p class="quote">"Great things start with a simple hello 👋"</p>
-            <p class="credit">© 2025 Dafiq Mahfuz Majid — Built with ☕ & curiosity</p>
+    <section id="contact" class="text-center py-5">
+        <div class="container">
+            <div class="card-glass p-5 py-6">
+                <h2 class="fw-bold display-5 mb-4">Let's build something <span class="text-gradient">remarkable</span>.</h2>
+                <p class="text-secondary mb-5 mx-auto" style="max-width: 600px;">
+                    I'm currently looking for new opportunities and collaborations. Whether you have a question or just want to say hi, my inbox is always open!
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="mailto:dafiq@example.com" class="social-icon" title="Email"><i class="bi bi-envelope-at-fill"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/Dmajid24" target="_blank" class="social-icon" title="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram"><i class="bi bi-instagram"></i></a>
+                </div>
+                <hr class="my-5 opacity-0">
+                <p class="small text-secondary mb-0">© 2026 Dafiq Mahfuz Majid • Built with Passion</p>
+            </div>
         </div>
-    
-        <div class="contact-bg"></div>
     </section>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
